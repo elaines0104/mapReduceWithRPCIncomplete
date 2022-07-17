@@ -7,7 +7,7 @@ import (
 func DoMap(jobName string,
 	files []string,
 	numberOfMapOutput int,
-	method string,
+	useCase string,
 	path string,
 	column string,
 	clients []client.Client) {
@@ -19,7 +19,7 @@ func DoReduce(
 	jobName string,
 	numberOfMapOutput int,
 	numberOfFiles int,
-	method string,
+	useCase string,
 	path string,
 	clients []client.Client) {
 

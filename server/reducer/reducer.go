@@ -8,7 +8,7 @@ import (
 func DoReduceStep(item common.ReduceStep) {
 	var reduceF func(key string, values []string) string
 
-	if item.Method == "wordcount" {
+	if item.UseCase == "wordcount" {
 		reduceF = wordCount.WordCountReduceF
 
 	}

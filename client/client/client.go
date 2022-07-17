@@ -29,7 +29,7 @@ type Response struct {
 }
 
 type MapStep struct {
-	Method            string
+	UseCase           string
 	JobName           string
 	File              string
 	MapStepNumber     int
@@ -38,7 +38,7 @@ type MapStep struct {
 	Column            string
 }
 type ReduceStep struct {
-	Method           string
+	UseCase          string
 	JobName          string
 	ReduceStepNumber int
 	NumberOfFiles    int
@@ -54,9 +54,9 @@ func (c Client) HealthCheck(url string) {
 
 }
 
-func (c Client) DoMapStep(method string, jobName string, mapStepNumber int, file string, numberOfMapOutput int, path string, column string) {
+func (c Client) DoMapStep(useCase string, jobName string, mapStepNumber int, file string, numberOfMapOutput int, path string, column string) {
 	//TODO
 }
-func (c Client) DoReduceStep(method string, jobName string, reduceStepNumber int, numberOfFiles int, path string) {
+func (c Client) DoReduceStep(useCase string, jobName string, reduceStepNumber int, numberOfFiles int, path string) {
 	//TODO
 }

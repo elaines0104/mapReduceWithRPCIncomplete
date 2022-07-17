@@ -15,9 +15,9 @@ func ihash(s string) uint32 {
 
 func DoMapStep(item common.MapStep) {
 	var mapF func(file string, contents string) []common.KeyValue
-	log.Printf("method %s", item.Method)
+	log.Printf("UseCase %s", item.UseCase)
 
-	if item.Method == "wordcount" {
+	if item.UseCase == "wordcount" {
 		mapF = wordCount.WordCountMapF
 
 	}
